@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 
 import List from '../components/list'
 
-import './app.css';
+import './app.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <List></List>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

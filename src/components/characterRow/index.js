@@ -1,15 +1,21 @@
-import React from 'react';
+import React from 'react'
 
 import Avatar from '../avatar'
 import Name from '../name'
 
-const CharacterRow = (props) => {
-    return (
-        <div>
-            <Avatar url={props.url}></Avatar>
-            <Name name={props.name}></Name>
-        </div>
-    );
-};
+import styled from 'styled-components'
 
-export default CharacterRow;
+const CharacterRow = props => {
+  return (
+    <CharacterContainer>
+      <Avatar url={props.url}></Avatar>
+      <Name name={props.name}></Name>
+    </CharacterContainer>
+  )
+}
+
+const CharacterContainer = styled.div`
+  background-color: ${props => props.theme.primary};
+`
+
+export default CharacterRow
